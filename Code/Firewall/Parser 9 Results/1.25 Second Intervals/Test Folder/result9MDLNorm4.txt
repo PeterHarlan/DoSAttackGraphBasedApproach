@@ -1,0 +1,1127 @@
+GBAD 3.3
+
+Parameters:
+  Input file..................... graphs/results9Final.g
+  Predefined substructure file... none
+  Output file.................... none
+  Dot file....................... none
+  Beam width..................... 20
+  Compress....................... false
+  Evaluation method.............. MDL
+  Anomaly Detection method....... Information Theoretic
+  Information Theoretic threshold 0.250000
+  Max Anomalous Score............ MAX
+  Normative Pattern.............. 4
+  'e' edges directed............. true
+  Iterations..................... 1
+  Limit.......................... 22503
+  Minimum size of substructures.. 3
+  Maximum size of substructures.. 20
+  Number of best substructures... 20
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Optimized (Anomaly Detection).. true
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+
+Read 4629 total positive graphs
+
+4629 positive graphs: 49197 vertices, 45007 edges, 1307960 bits
+9 unique labels
+
+7 initial substructures
+Normative Pattern (4):
+Substructure: value = 1.04574, instances = 1827
+  Graph(4v,3e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+
+Anomalous Instance(s):
+
+ from example 6:
+    v 49 "Workstation"
+    v 50 "Mail Server"
+    v 51 "Workstation"
+    v 55 "Workstation"
+    d 49 50 "mid"
+    d 51 50 "mid"
+    d 55 50 "high" <-- anomaly (original edge vertices: 7 -- 2, in original example 6)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 6:
+    v 49 "Workstation"
+    v 50 "Mail Server"
+    v 51 "Workstation"
+    v 52 "Workstation"
+    d 49 50 "mid"
+    d 51 50 "mid"
+    d 52 50 "high" <-- anomaly (original edge vertices: 4 -- 2, in original example 6)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 114:
+    v 1501 "Workstation"
+    v 1502 "Mail Server"
+    v 1506 "Workstation"
+    v 1507 "Workstation"
+    d 1501 1502 "mid"
+    d 1506 1502 "high" <-- anomaly (original edge vertices: 8 -- 4, in original example 114)
+    d 1507 1502 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 114:
+    v 1501 "Workstation"
+    v 1502 "Mail Server"
+    v 1504 "Workstation"
+    v 1507 "Workstation"
+    d 1501 1502 "mid"
+    d 1504 1502 "high" <-- anomaly (original edge vertices: 6 -- 4, in original example 114)
+    d 1507 1502 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 121:
+    v 1685 "Workstation"
+    v 1686 "Mail Server"
+    v 1690 "Workstation"
+    v 1694 "Workstation"
+    d 1685 1686 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 121)
+    d 1690 1686 "mid"
+    d 1694 1686 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 121:
+    v 1686 "Mail Server"
+    v 1689 "Workstation"
+    v 1690 "Workstation"
+    v 1694 "Workstation"
+    d 1689 1686 "high" <-- anomaly (original edge vertices: 5 -- 2, in original example 121)
+    d 1690 1686 "mid"
+    d 1694 1686 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 129:
+    v 1771 "Workstation"
+    v 1772 "Mail Server"
+    v 1774 "Workstation"
+    v 1775 "Workstation"
+    d 1771 1772 "mid"
+    d 1774 1772 "high" <-- anomaly (original edge vertices: 10 -- 8, in original example 129)
+    d 1775 1772 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 142:
+    v 1912 "Workstation"
+    v 1913 "Mail Server"
+    v 1914 "Workstation"
+    v 1916 "Workstation"
+    d 1912 1913 "mid"
+    d 1914 1913 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 142)
+    d 1916 1913 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 149:
+    v 2182 "Workstation"
+    v 2183 "Mail Server"
+    v 2184 "Workstation"
+    v 2186 "Workstation"
+    d 2182 2183 "mid"
+    d 2184 2183 "mid"
+    d 2186 2183 "high" <-- anomaly (original edge vertices: 9 -- 6, in original example 149)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 149:
+    v 2182 "Workstation"
+    v 2183 "Mail Server"
+    v 2184 "Workstation"
+    v 2185 "Workstation"
+    d 2182 2183 "mid"
+    d 2184 2183 "mid"
+    d 2185 2183 "high" <-- anomaly (original edge vertices: 8 -- 6, in original example 149)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 188:
+    v 2809 "Workstation"
+    v 2810 "Mail Server"
+    v 2811 "Workstation"
+    v 2815 "Workstation"
+    d 2809 2810 "mid"
+    d 2811 2810 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 188)
+    d 2815 2810 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 245:
+    v 3562 "Workstation"
+    v 3563 "Mail Server"
+    v 3564 "Workstation"
+    v 3566 "Workstation"
+    d 3562 3563 "mid"
+    d 3564 3563 "mid"
+    d 3566 3563 "high" <-- anomaly (original edge vertices: 7 -- 4, in original example 245)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 259:
+    v 3683 "Workstation"
+    v 3684 "Mail Server"
+    v 3685 "Workstation"
+    v 3690 "Workstation"
+    d 3683 3684 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 259)
+    d 3685 3684 "mid"
+    d 3690 3684 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 262:
+    v 3706 "Workstation"
+    v 3707 "Mail Server"
+    v 3710 "Workstation"
+    v 3711 "Workstation"
+    d 3706 3707 "mid"
+    d 3710 3707 "high" <-- anomaly (original edge vertices: 5 -- 2, in original example 262)
+    d 3711 3707 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 262:
+    v 3706 "Workstation"
+    v 3707 "Mail Server"
+    v 3708 "Workstation"
+    v 3711 "Workstation"
+    d 3706 3707 "mid"
+    d 3708 3707 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 262)
+    d 3711 3707 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 269:
+    v 3884 "Workstation"
+    v 3885 "Mail Server"
+    v 3887 "Workstation"
+    v 3888 "Workstation"
+    d 3884 3885 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 269)
+    d 3887 3885 "mid"
+    d 3888 3885 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 269:
+    v 3885 "Mail Server"
+    v 3886 "Workstation"
+    v 3887 "Workstation"
+    v 3888 "Workstation"
+    d 3886 3885 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 269)
+    d 3887 3885 "mid"
+    d 3888 3885 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 277:
+    v 3949 "Workstation"
+    v 3950 "Mail Server"
+    v 3951 "Workstation"
+    v 3952 "Workstation"
+    d 3949 3950 "mid"
+    d 3951 3950 "mid"
+    d 3952 3950 "high" <-- anomaly (original edge vertices: 4 -- 2, in original example 277)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 291:
+    v 4093 "Workstation"
+    v 4094 "Mail Server"
+    v 4095 "Workstation"
+    v 4097 "Workstation"
+    d 4093 4094 "mid"
+    d 4095 4094 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 291)
+    d 4097 4094 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 296:
+    v 4261 "Workstation"
+    v 4262 "Mail Server"
+    v 4264 "Workstation"
+    v 4266 "Workstation"
+    d 4261 4262 "mid"
+    d 4264 4262 "mid"
+    d 4266 4262 "high" <-- anomaly (original edge vertices: 9 -- 5, in original example 296)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 296:
+    v 4261 "Workstation"
+    v 4262 "Mail Server"
+    v 4264 "Workstation"
+    v 4265 "Workstation"
+    d 4261 4262 "mid"
+    d 4264 4262 "mid"
+    d 4265 4262 "high" <-- anomaly (original edge vertices: 8 -- 5, in original example 296)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 335:
+    v 4781 "Mail Server"
+    v 4782 "Workstation"
+    v 4783 "Workstation"
+    v 4784 "Workstation"
+    d 4782 4781 "mid"
+    d 4783 4781 "high" <-- anomaly (original edge vertices: 4 -- 2, in original example 335)
+    d 4784 4781 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 335:
+    v 4780 "Workstation"
+    v 4781 "Mail Server"
+    v 4782 "Workstation"
+    v 4784 "Workstation"
+    d 4780 4781 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 335)
+    d 4782 4781 "mid"
+    d 4784 4781 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 376:
+    v 5385 "Workstation"
+    v 5386 "Mail Server"
+    v 5391 "Workstation"
+    v 5392 "Workstation"
+    d 5385 5386 "mid"
+    d 5391 5386 "mid"
+    d 5392 5386 "high" <-- anomaly (original edge vertices: 8 -- 2, in original example 376)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 380:
+    v 5421 "Workstation"
+    v 5422 "Mail Server"
+    v 5423 "Workstation"
+    v 5427 "Workstation"
+    d 5421 5422 "high" <-- anomaly (original edge vertices: 4 -- 5, in original example 380)
+    d 5423 5422 "mid"
+    d 5427 5422 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 417:
+    v 5981 "Workstation"
+    v 5982 "Mail Server"
+    v 5985 "Workstation"
+    v 5986 "Workstation"
+    d 5981 5982 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 417)
+    d 5985 5982 "mid"
+    d 5986 5982 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 417:
+    v 5982 "Mail Server"
+    v 5983 "Workstation"
+    v 5985 "Workstation"
+    v 5986 "Workstation"
+    d 5983 5982 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 417)
+    d 5985 5982 "mid"
+    d 5986 5982 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 438:
+    v 6180 "Workstation"
+    v 6181 "Mail Server"
+    v 6182 "Workstation"
+    v 6183 "Workstation"
+    d 6180 6181 "mid"
+    d 6182 6181 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 438)
+    d 6183 6181 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 468:
+    v 6578 "Workstation"
+    v 6579 "Mail Server"
+    v 6582 "Workstation"
+    v 6584 "Workstation"
+    d 6578 6579 "mid"
+    d 6582 6579 "mid"
+    d 6584 6579 "high" <-- anomaly (original edge vertices: 7 -- 2, in original example 468)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 484:
+    v 6871 "Workstation"
+    v 6872 "Mail Server"
+    v 6874 "Workstation"
+    v 6876 "Workstation"
+    d 6871 6872 "mid"
+    d 6874 6872 "high" <-- anomaly (original edge vertices: 4 -- 2, in original example 484)
+    d 6876 6872 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 484:
+    v 6871 "Workstation"
+    v 6872 "Mail Server"
+    v 6873 "Workstation"
+    v 6876 "Workstation"
+    d 6871 6872 "mid"
+    d 6873 6872 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 484)
+    d 6876 6872 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 525:
+    v 7421 "Workstation"
+    v 7422 "Mail Server"
+    v 7423 "Workstation"
+    v 7424 "Workstation"
+    d 7421 7422 "mid"
+    d 7423 7422 "mid"
+    d 7424 7422 "high" <-- anomaly (original edge vertices: 10 -- 8, in original example 525)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 550:
+    v 7770 "Workstation"
+    v 7771 "Mail Server"
+    v 7772 "Workstation"
+    v 7773 "Workstation"
+    d 7770 7771 "mid"
+    d 7772 7771 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 550)
+    d 7773 7771 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 588:
+    v 8239 "Mail Server"
+    v 8240 "Workstation"
+    v 8241 "Workstation"
+    v 8242 "Workstation"
+    d 8240 8239 "mid"
+    d 8241 8239 "high" <-- anomaly (original edge vertices: 7 -- 5, in original example 588)
+    d 8242 8239 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 588:
+    v 8238 "Workstation"
+    v 8239 "Mail Server"
+    v 8240 "Workstation"
+    v 8242 "Workstation"
+    d 8238 8239 "high" <-- anomaly (original edge vertices: 4 -- 5, in original example 588)
+    d 8240 8239 "mid"
+    d 8242 8239 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 595:
+    v 8316 "Workstation"
+    v 8317 "Mail Server"
+    v 8322 "Workstation"
+    v 8324 "Workstation"
+    d 8316 8317 "mid"
+    d 8322 8317 "mid"
+    d 8324 8317 "high" <-- anomaly (original edge vertices: 9 -- 2, in original example 595)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 595:
+    v 8316 "Workstation"
+    v 8317 "Mail Server"
+    v 8321 "Workstation"
+    v 8322 "Workstation"
+    d 8316 8317 "mid"
+    d 8321 8317 "high" <-- anomaly (original edge vertices: 6 -- 2, in original example 595)
+    d 8322 8317 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 595:
+    v 8316 "Workstation"
+    v 8317 "Mail Server"
+    v 8318 "Workstation"
+    v 8322 "Workstation"
+    d 8316 8317 "mid"
+    d 8318 8317 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 595)
+    d 8322 8317 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 668:
+    v 9383 "Workstation"
+    v 9384 "Mail Server"
+    v 9385 "Workstation"
+    v 9389 "Workstation"
+    d 9383 9384 "mid"
+    d 9385 9384 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 668)
+    d 9389 9384 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 698:
+    v 9756 "Workstation"
+    v 9757 "Mail Server"
+    v 9758 "Workstation"
+    v 9763 "Workstation"
+    d 9756 9757 "mid"
+    d 9758 9757 "high" <-- anomaly (original edge vertices: 9 -- 8, in original example 698)
+    d 9763 9757 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 714:
+    v 9896 "Workstation"
+    v 9897 "Mail Server"
+    v 9899 "Workstation"
+    v 9900 "Workstation"
+    d 9896 9897 "high" <-- anomaly (original edge vertices: 3 -- 4, in original example 714)
+    d 9899 9897 "mid"
+    d 9900 9897 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 714:
+    v 9897 "Mail Server"
+    v 9898 "Workstation"
+    v 9899 "Workstation"
+    v 9900 "Workstation"
+    d 9898 9897 "high" <-- anomaly (original edge vertices: 5 -- 4, in original example 714)
+    d 9899 9897 "mid"
+    d 9900 9897 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 741:
+    v 10265 "Workstation"
+    v 10266 "Mail Server"
+    v 10267 "Workstation"
+    v 10269 "Workstation"
+    d 10265 10266 "mid"
+    d 10267 10266 "mid"
+    d 10269 10266 "high" <-- anomaly (original edge vertices: 9 -- 6, in original example 741)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 781:
+    v 10889 "Workstation"
+    v 10890 "Mail Server"
+    v 10893 "Workstation"
+    v 10894 "Workstation"
+    d 10889 10890 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 781)
+    d 10893 10890 "mid"
+    d 10894 10890 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 825:
+    v 11407 "Workstation"
+    v 11408 "Mail Server"
+    v 11409 "Workstation"
+    v 11411 "Workstation"
+    d 11407 11408 "mid"
+    d 11409 11408 "high" <-- anomaly (original edge vertices: 6 -- 5, in original example 825)
+    d 11411 11408 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 846:
+    v 11673 "Workstation"
+    v 11674 "Mail Server"
+    v 11675 "Workstation"
+    v 11676 "Workstation"
+    d 11673 11674 "mid"
+    d 11675 11674 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 846)
+    d 11676 11674 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 862:
+    v 11791 "Mail Server"
+    v 11792 "Workstation"
+    v 11793 "Workstation"
+    v 11794 "Workstation"
+    d 11792 11791 "mid"
+    d 11793 11791 "high" <-- anomaly (original edge vertices: 4 -- 2, in original example 862)
+    d 11794 11791 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 862:
+    v 11790 "Workstation"
+    v 11791 "Mail Server"
+    v 11792 "Workstation"
+    v 11794 "Workstation"
+    d 11790 11791 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 862)
+    d 11792 11791 "mid"
+    d 11794 11791 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 929:
+    v 12644 "Workstation"
+    v 12645 "Mail Server"
+    v 12659 "Workstation"
+    v 12712 "Workstation"
+    d 12644 12645 "mid"
+    d 12712 12645 "high" <-- anomaly (original edge vertices: 69 -- 2, in original example 929)
+    d 12659 12645 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 929:
+    v 12644 "Workstation"
+    v 12645 "Mail Server"
+    v 12659 "Workstation"
+    v 12740 "Workstation"
+    d 12644 12645 "mid"
+    d 12740 12645 "high" <-- anomaly (original edge vertices: 97 -- 2, in original example 929)
+    d 12659 12645 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 930:
+    v 12763 "Mail Server"
+    v 12797 "Workstation"
+    v 12802 "Workstation"
+    v 12804 "Workstation"
+    d 12802 12763 "high" <-- anomaly (original edge vertices: 40 -- 1, in original example 930)
+    d 12804 12763 "mid"
+    d 12797 12763 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 974:
+    v 13320 "Workstation"
+    v 13321 "Mail Server"
+    v 13325 "Workstation"
+    v 13327 "Workstation"
+    d 13320 13321 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 974)
+    d 13325 13321 "mid"
+    d 13327 13321 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1003:
+    v 13716 "Workstation"
+    v 13717 "Mail Server"
+    v 13719 "Workstation"
+    v 13720 "Workstation"
+    d 13716 13717 "mid"
+    d 13719 13717 "mid"
+    d 13720 13717 "high" <-- anomaly (original edge vertices: 5 -- 2, in original example 1003)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1003:
+    v 13716 "Workstation"
+    v 13717 "Mail Server"
+    v 13718 "Workstation"
+    v 13719 "Workstation"
+    d 13716 13717 "mid"
+    d 13718 13717 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 1003)
+    d 13719 13717 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1024:
+    v 14116 "Mail Server"
+    v 14117 "Workstation"
+    v 14118 "Workstation"
+    v 14119 "Workstation"
+    d 14117 14116 "mid"
+    d 14118 14116 "high" <-- anomaly (original edge vertices: 6 -- 4, in original example 1024)
+    d 14119 14116 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1024:
+    v 14115 "Workstation"
+    v 14116 "Mail Server"
+    v 14117 "Workstation"
+    v 14119 "Workstation"
+    d 14115 14116 "high" <-- anomaly (original edge vertices: 3 -- 4, in original example 1024)
+    d 14117 14116 "mid"
+    d 14119 14116 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1069:
+    v 14729 "Mail Server"
+    v 14732 "Workstation"
+    v 14733 "Workstation"
+    v 14735 "Workstation"
+    d 14732 14729 "mid"
+    d 14733 14729 "mid"
+    d 14735 14729 "high" <-- anomaly (original edge vertices: 10 -- 4, in original example 1069)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1069:
+    v 14729 "Mail Server"
+    v 14732 "Workstation"
+    v 14733 "Workstation"
+    v 14734 "Workstation"
+    d 14732 14729 "mid"
+    d 14733 14729 "mid"
+    d 14734 14729 "high" <-- anomaly (original edge vertices: 9 -- 4, in original example 1069)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1069:
+    v 14728 "Workstation"
+    v 14729 "Mail Server"
+    v 14732 "Workstation"
+    v 14733 "Workstation"
+    d 14728 14729 "high" <-- anomaly (original edge vertices: 3 -- 4, in original example 1)
+    d 14732 14729 "mid"
+    d 14733 14729 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1077:
+    v 14815 "Workstation"
+    v 14816 "Mail Server"
+    v 14819 "Workstation"
+    v 14821 "Workstation"
+    d 14815 14816 "mid"
+    d 14819 14816 "mid"
+    d 14821 14816 "high" <-- anomaly (original edge vertices: 7 -- 2, in original example 1077)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1077:
+    v 14815 "Workstation"
+    v 14816 "Mail Server"
+    v 14817 "Workstation"
+    v 14819 "Workstation"
+    d 14815 14816 "mid"
+    d 14817 14816 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 1077)
+    d 14819 14816 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1113:
+    v 15474 "Workstation"
+    v 15475 "Mail Server"
+    v 15476 "Workstation"
+    v 15482 "Workstation"
+    d 15474 15475 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 1113)
+    d 15476 15475 "mid"
+    d 15482 15475 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1143:
+    v 15923 "Workstation"
+    v 15924 "Mail Server"
+    v 15925 "Workstation"
+    v 15929 "Workstation"
+    d 15923 15924 "high" <-- anomaly (original edge vertices: 3 -- 4, in original example 1143)
+    d 15925 15924 "mid"
+    d 15929 15924 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1152:
+    v 16000 "Mail Server"
+    v 16001 "Workstation"
+    v 16002 "Workstation"
+    v 16003 "Workstation"
+    d 16001 16000 "mid"
+    d 16002 16000 "mid"
+    d 16003 16000 "high" <-- anomaly (original edge vertices: 5 -- 2, in original example 1152)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1152:
+    v 15999 "Workstation"
+    v 16000 "Mail Server"
+    v 16001 "Workstation"
+    v 16002 "Workstation"
+    d 15999 16000 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 1152)
+    d 16001 16000 "mid"
+    d 16002 16000 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1159:
+    v 16062 "Workstation"
+    v 16063 "Mail Server"
+    v 16065 "Workstation"
+    v 16066 "Workstation"
+    d 16062 16063 "mid"
+    d 16065 16063 "mid"
+    d 16066 16063 "high" <-- anomaly (original edge vertices: 5 -- 2, in original example 1159)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1159:
+    v 16062 "Workstation"
+    v 16063 "Mail Server"
+    v 16064 "Workstation"
+    v 16065 "Workstation"
+    d 16062 16063 "mid"
+    d 16064 16063 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 1159)
+    d 16065 16063 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1173:
+    v 16332 "Mail Server"
+    v 16335 "Workstation"
+    v 16337 "Workstation"
+    v 16341 "Workstation"
+    d 16335 16332 "mid"
+    d 16337 16332 "high" <-- anomaly (original edge vertices: 6 -- 1, in original example 1173)
+    d 16341 16332 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1173:
+    v 16332 "Mail Server"
+    v 16334 "Workstation"
+    v 16335 "Workstation"
+    v 16341 "Workstation"
+    d 16334 16332 "high" <-- anomaly (original edge vertices: 3 -- 1, in original example 1173)
+    d 16335 16332 "mid"
+    d 16341 16332 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1180:
+    v 16419 "Mail Server"
+    v 16423 "Workstation"
+    v 16429 "Workstation"
+    v 16430 "Workstation"
+    d 16423 16419 "mid"
+    d 16429 16419 "high" <-- anomaly (original edge vertices: 11 -- 1, in original example 1180)
+    d 16430 16419 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1182:
+    v 16449 "Workstation"
+    v 16450 "Mail Server"
+    v 16461 "Workstation"
+    v 16464 "Workstation"
+    d 16449 16450 "mid"
+    d 16461 16450 "high" <-- anomaly (original edge vertices: 13 -- 2, in original example 1182)
+    d 16464 16450 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1197:
+    v 16690 "Workstation"
+    v 16691 "Mail Server"
+    v 16696 "Workstation"
+    v 16698 "Workstation"
+    d 16690 16691 "mid"
+    d 16696 16691 "high" <-- anomaly (original edge vertices: 7 -- 2, in original example 1197)
+    d 16698 16691 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1226:
+    v 17203 "Mail Server"
+    v 17207 "Workstation"
+    v 17210 "Workstation"
+    v 17211 "Workstation"
+    d 17207 17203 "mid"
+    d 17210 17203 "high" <-- anomaly (original edge vertices: 8 -- 1, in original example 1226)
+    d 17211 17203 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1226:
+    v 17203 "Mail Server"
+    v 17207 "Workstation"
+    v 17209 "Workstation"
+    v 17211 "Workstation"
+    d 17207 17203 "mid"
+    d 17209 17203 "high" <-- anomaly (original edge vertices: 7 -- 1, in original example 1226)
+    d 17211 17203 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1278:
+    v 17945 "Workstation"
+    v 17946 "Mail Server"
+    v 17949 "Workstation"
+    v 17950 "Workstation"
+    d 17945 17946 "high" <-- anomaly (original edge vertices: 1 -- 2, in original example 1278)
+    d 17949 17946 "mid"
+    d 17950 17946 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1315:
+    v 18454 "Workstation"
+    v 18455 "Mail Server"
+    v 18456 "Workstation"
+    v 18457 "Workstation"
+    d 18454 18455 "mid"
+    d 18456 18455 "high" <-- anomaly (original edge vertices: 3 -- 2, in original example 1315)
+    d 18457 18455 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1398:
+    v 19630 "Workstation"
+    v 19631 "Mail Server"
+    v 19632 "Workstation"
+    v 19633 "Workstation"
+    d 19630 19631 "high" <-- anomaly (original edge vertices: 3 -- 4, in original example 1398)
+    d 19632 19631 "mid"
+    d 19633 19631 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1454:
+    v 21128 "Mail Server"
+    v 21130 "Workstation"
+    v 21152 "Workstation"
+    v 21158 "Workstation"
+    d 21152 21128 "mid"
+    d 21130 21128 "high" <-- anomaly (original edge vertices: 3 -- 1, in original example 1454)
+    d 21158 21128 "mid"
+    (information_theoretic anomalous value = 79.000000 )
+
+
+ from example 1915:
+    v 32965 "Mail Server"
+    v 32970 "Workstation"
+    v 32991 "Workstation"
+    v 33001 "Workstation"
+    d 32970 32965 "mid"
+    d 33001 32965 "mid"
+    d 32991 32965 "high" <-- anomaly (original edge vertices: 27 -- 1, in original example 1915)
+    (information_theoretic anomalous value = 79.000000 )
+
+
+Best 20 substructures:
+
+(1) Substructure: value = 1.0714, instances = 2333
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(2) Substructure: value = 1.07132, instances = 2333
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(3) Substructure: value = 1.04578, instances = 1827
+  Graph(4v,3e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+
+(4) Substructure: value = 1.04574, instances = 1827
+  Graph(4v,3e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+
+(5) Substructure: value = 1.0375, instances = 1386
+  Graph(5v,4e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+
+(6) Substructure: value = 1.03748, instances = 1386
+  Graph(5v,4e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+
+(7) Substructure: value = 1.03448, instances = 2144
+  Graph(3v,2e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+
+(8) Substructure: value = 1.03415, instances = 2144
+  Graph(3v,2e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+
+(9) Substructure: value = 1.02625, instances = 304
+  Graph(6v,5e):
+    v 1 "Internet"
+    v 2 "External Web"
+    v 3 "Internet"
+    v 4 "Internet"
+    v 5 "Internet"
+    v 6 "Internet"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(10) Substructure: value = 1.02489, instances = 1064
+  Graph(6v,5e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(11) Substructure: value = 1.02488, instances = 1064
+  Graph(6v,5e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(12) Substructure: value = 1.01953, instances = 319
+  Graph(5v,4e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    v 4 "Internet"
+    v 5 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+    d 5 1 "mid"
+
+(13) Substructure: value = 1.01747, instances = 1176
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 3 1 "mid"
+    d 3 2 "mid"
+
+(14) Substructure: value = 1.01733, instances = 1173
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 3 1 "mid"
+    d 3 2 "mid"
+
+(15) Substructure: value = 1.01656, instances = 1091
+  Graph(4v,3e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(16) Substructure: value = 1.01655, instances = 1091
+  Graph(4v,3e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(17) Substructure: value = 1.01201, instances = 330
+  Graph(4v,3e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    v 4 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(18) Substructure: value = 1.00664, instances = 784
+  Graph(7v,6e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    v 7 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+    d 7 2 "mid"
+
+(19) Substructure: value = 1.0039, instances = 333
+  Graph(3v,2e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(20) Substructure: value = 1.00163, instances = 824
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 2 3 "mid"
+    d 1 3 "mid"
+
+
+GBAD done (elapsed CPU time = 1925.46 seconds).

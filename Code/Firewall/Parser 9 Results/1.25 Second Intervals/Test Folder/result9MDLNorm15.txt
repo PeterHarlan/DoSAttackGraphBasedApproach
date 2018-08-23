@@ -1,0 +1,280 @@
+GBAD 3.3
+
+Parameters:
+  Input file..................... graphs/results9Final.g
+  Predefined substructure file... none
+  Output file.................... none
+  Dot file....................... none
+  Beam width..................... 20
+  Compress....................... false
+  Evaluation method.............. MDL
+  Anomaly Detection method....... Information Theoretic
+  Information Theoretic threshold 0.250000
+  Max Anomalous Score............ MAX
+  Normative Pattern.............. 15
+  'e' edges directed............. true
+  Iterations..................... 1
+  Limit.......................... 22503
+  Minimum size of substructures.. 3
+  Maximum size of substructures.. 20
+  Number of best substructures... 20
+  Output level................... 2
+  Allow overlapping instances.... false
+  Prune.......................... false
+  Optimized (Anomaly Detection).. true
+  Threshold...................... 0.000000
+  Value-based queue.............. false
+
+Read 4629 total positive graphs
+
+4629 positive graphs: 49197 vertices, 45007 edges, 1307960 bits
+9 unique labels
+
+7 initial substructures
+Normative Pattern (15):
+Substructure: value = 1.01656, instances = 1091
+  Graph(4v,3e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+Anomalous Instance(s):
+
+ from example 2109:
+    v 34820 "Workstation"
+    v 34822 "DHCP"
+    v 34824 "Firewall to Data Center VLAN" <-- anomaly (original vertex: 5 , in original example 2109)
+    v 34825 "Workstation"
+    d 34820 34822 "mid"
+    d 34824 34822 "mid"
+    d 34825 34822 "mid"
+    (information_theoretic anomalous value = 2.000000 )
+
+
+ from example 3692:
+    v 43390 "Workstation"
+    v 43391 "DHCP"
+    v 43392 "Workstation"
+    v 43394 "Firewall to Data Center VLAN" <-- anomaly (original vertex: 5 , in original example 3692)
+    d 43390 43391 "mid"
+    d 43392 43391 "mid"
+    d 43394 43391 "mid"
+    (information_theoretic anomalous value = 2.000000 )
+
+
+Best 20 substructures:
+
+(1) Substructure: value = 1.0714, instances = 2333
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(2) Substructure: value = 1.07132, instances = 2333
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(3) Substructure: value = 1.04578, instances = 1827
+  Graph(4v,3e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+
+(4) Substructure: value = 1.04574, instances = 1827
+  Graph(4v,3e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+
+(5) Substructure: value = 1.0375, instances = 1386
+  Graph(5v,4e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+
+(6) Substructure: value = 1.03748, instances = 1386
+  Graph(5v,4e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+
+(7) Substructure: value = 1.03448, instances = 2144
+  Graph(3v,2e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+
+(8) Substructure: value = 1.03415, instances = 2144
+  Graph(3v,2e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+
+(9) Substructure: value = 1.02625, instances = 304
+  Graph(6v,5e):
+    v 1 "Internet"
+    v 2 "External Web"
+    v 3 "Internet"
+    v 4 "Internet"
+    v 5 "Internet"
+    v 6 "Internet"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(10) Substructure: value = 1.02489, instances = 1064
+  Graph(6v,5e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(11) Substructure: value = 1.02488, instances = 1064
+  Graph(6v,5e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+
+(12) Substructure: value = 1.01953, instances = 319
+  Graph(5v,4e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    v 4 "Internet"
+    v 5 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+    d 5 1 "mid"
+
+(13) Substructure: value = 1.01747, instances = 1176
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 3 1 "mid"
+    d 3 2 "mid"
+
+(14) Substructure: value = 1.01733, instances = 1173
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 3 1 "mid"
+    d 3 2 "mid"
+
+(15) Substructure: value = 1.01656, instances = 1091
+  Graph(4v,3e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(16) Substructure: value = 1.01655, instances = 1091
+  Graph(4v,3e):
+    v 1 "DHCP"
+    v 2 "Workstation"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(17) Substructure: value = 1.01201, instances = 330
+  Graph(4v,3e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    v 4 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+    d 4 1 "mid"
+
+(18) Substructure: value = 1.00664, instances = 784
+  Graph(7v,6e):
+    v 1 "Workstation"
+    v 2 "Mail Server"
+    v 3 "Workstation"
+    v 4 "Workstation"
+    v 5 "Workstation"
+    v 6 "Workstation"
+    v 7 "Workstation"
+    d 1 2 "mid"
+    d 3 2 "mid"
+    d 4 2 "mid"
+    d 5 2 "mid"
+    d 6 2 "mid"
+    d 7 2 "mid"
+
+(19) Substructure: value = 1.0039, instances = 333
+  Graph(3v,2e):
+    v 1 "External Web"
+    v 2 "Internet"
+    v 3 "Internet"
+    d 2 1 "mid"
+    d 3 1 "mid"
+
+(20) Substructure: value = 1.00163, instances = 824
+  Graph(3v,2e):
+    v 1 "DHCP"
+    v 2 "DNS"
+    v 3 "Workstation"
+    d 2 3 "mid"
+    d 1 3 "mid"
+
+
+GBAD done (elapsed CPU time = 25660.43 seconds).
